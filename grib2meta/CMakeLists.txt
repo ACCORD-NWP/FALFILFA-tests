@@ -24,5 +24,5 @@ file(MAKE_DIRECTORY ${CMAKE_BINARY_DIR}/tests_results/grib2meta/)
 foreach( f ${LIST_TESTS})
 
 add_test(NAME ${f}
-    COMMAND bash ${CMAKE_CURRENT_SOURCE_DIR}/test.sh ${f} ${LFITOOLS} ${CMAKE_CURRENT_SOURCE_DIR} ${ECCODES_LIB_DIR} ${CMAKE_BINARY_DIR})
+	COMMAND bash ${CMAKE_CURRENT_SOURCE_DIR}/test.sh ${f} ${LFITOOLS} ${CMAKE_CURRENT_SOURCE_DIR} ${eccodes_ROOT} ${CMAKE_BINARY_DIR})
 endforeach()

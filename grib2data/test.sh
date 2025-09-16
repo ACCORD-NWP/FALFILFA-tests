@@ -27,7 +27,6 @@ unset ECCODES_DEFINITION_PATH
 unset GRIB_DEFINITION_PATH
 unset ECCODES_SAMPLES_PATH
 unset GRIB_SAMPLE_PATH 
-grib_api_prefix=$(dirname $grib_api_prefix)
 
 ## ECCODES_DEFINITION_PATH and ECCODES_SAMPLES_PATH aren't needed
 #export ECCODES_DEFINITION_PATH=$p/extra_grib_defs:$grib_api_prefix/share/definitions:$grib_api_prefix/share/eccodes/definitions
